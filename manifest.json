@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "gleeo-password-skipper",
+  "version": "1.0",
+  "description": "Automatically completes the Gleeo password modal when trying to access a project",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.gleeo.com/*"],
+      "js": ["passwordskipper.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": "icons/icon-32.png",
+    "default_title": "Gleeo Password Skipper",
+    "default_popup": "popup/index.html"
+  }
+}

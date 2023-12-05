@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-family: Roboto, Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+html,
+body {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  background-color: #212121;
+  color: #efefef;
+}
+
+#popup-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+#title {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#input-field {
+  background-color: #343434;
+  padding: 3px;
+  border: black 2px solid;
+  border-radius: 5px;
+  color: #efefef;
+  width: 90%;
+}
+
+#save-button {
+  background-color: #343434;
+  padding: 3px;
+  border: black 2px solid;
+  border-radius: 5px;
+  color: #efefef;
+  width: 30%;
+}
